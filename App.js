@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, FlatList } from 'react-native';
 import Header from './components/header'
-import ToDoItem from './components/todoitem'
-import AddToDo from './components/addtodo'
+import ToDoItem from './components/tditem'
+import AddToDo from './components/additem'
 
 export default function App() {
 
-  const [todos, setTodos] = useState([
-  ]);
+  const [todos, setTodos] = useState([]);
 
 
   const pressHandler = (key) => {

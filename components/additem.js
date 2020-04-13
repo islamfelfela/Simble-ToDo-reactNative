@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Icon, Fab } from 'react-native';
+import { StyleSheet, View, TextInput, Button } from 'react-native';
 
 export default function AddToDo({ submitHandler }) {
     const [text, setText] = useState('')
@@ -11,16 +11,11 @@ export default function AddToDo({ submitHandler }) {
         <View>
             <TextInput
                 style={styles.input}
-                placeholder="Add New Task"
+                placeholder="Insert New"
                 onChangeText={(val) => changeHandler(val)}
             />
             <Button
-                onPress={() => submitHandler(text)} title='Add Task' color='coral'
-            // onPress={() => submitHandler(text)}
-            // direction="up"
-            // containerStyle={{}}
-            // style={{ backgroundColor: 'coral' }}
-            // position="bottomRight"
+                onPress={() => submitHandler(text)} title='Add' color='#ccc'
             />
 
 
@@ -33,7 +28,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         paddingHorizontal: 10,
         paddingVertical: 8,
-        borderBottomWidth: 0.1,
-        borderBottomColor: '#ddd'
+        borderBottomWidth: 1,
+        borderBottomColor: '#2c2c2c'
     }
 })

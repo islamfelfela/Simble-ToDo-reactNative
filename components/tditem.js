@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 export default function ToDoItem({ item, pressHandler }) {
     return (
@@ -16,6 +16,5 @@ const styles = StyleSheet.create({
         borderColor: '#000',
         borderWidth: '1',
         borderStyle: 'solid',
-        borderRadius: 10
     }
 });
